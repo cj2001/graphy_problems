@@ -1,0 +1,42 @@
+version: '3.7'
+
+services:
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./portainer-data:/data
+    ports:
+      - "9443:9443"
+      - "8000:8000"
+
+  postgres:
+    image: postgres
+    container_name: pg_container
+    volumes:
+      - $HOME/graphy_data:/var/lib/postgresql/data
+      - ./sql/create_air_routes_tables.sql:/docker-entrypoint-initdb.d/create_air_routes_tables.sql
+      - ./sql/populate_airport_nodes.sql:/docker-entrypoint-initdb.d/populate_airport_nodes.sql
+      - ./sql/populate_continent_nodes.sql:/docker-entrypoint-initdb.d/populate_continent_nodes.sql
+      - ./sql/populate_country_nodes.sql:/docker-entrypoint-initdb.d/populate_country_nodes.sql
+      - ./sql/populate_routes_rels.sql:/docker-entrypoint-initdb.d/populate_routes_rels.sql
+      - ./sql/populate_iroutes_rels.sql:/docker-entrypoint-initdb.d/populate_iroutes_rels.sql
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: letmein
+      POSTGRES_DB: test
+    ports:
+      - "5432:5432"
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4_container
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: letmein
+    ports:
+      - "80:80"
