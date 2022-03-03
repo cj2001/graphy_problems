@@ -6,7 +6,10 @@
 #### Last updated: March 3, 2022
 
 ## Introduction
+
 A frequent question from data scientists is “why would I want to use a graph database when I can do all of what I need to do in SQL?” In some cases an RDBMS is a fine solution. However, there are many times that your data is a graph, even though it might not be immediately recognizable as such. This course walks through how to identify whether a problem is actually a graph and the benefits of analyzing that way rather than traditional using traditional SQL.
+
+In this course we will be working with a data set of routes between airports.  It is based off of the graph data that can be found in [here](https://github.com/krlawrence/graph). 
 
 ## Recommended tools
 
