@@ -1,5 +1,4 @@
-# Graph Databases versus SQL for Data Science: 
-## Identifying ‘Graph-y’ Problems in Your Data
+# Graph Databases versus SQL for Data Science: Identifying ‘Graph-y’ Problems in Your Data
 ### Written by: Dr. Clair J. Sullivan, Data Science Advocate, Neo4j
 #### email: clair.sullivan@neo4j.com
 #### Twitter: @CJLovesData1
@@ -39,7 +38,7 @@ We will be using Portainer to monitor and interface with our containers.  To get
 
 There are then two ways that we can reach the Postgres database:
 
-#### Using the command line
+#### 1. Using the command line
 
 Via Portainer, open the console for the `pg_container` container.  From there, you can get into Postgres via the following command at the command line:
 
@@ -47,6 +46,6 @@ Via Portainer, open the console for the `pg_container` container.  From there, y
 psql -h localhost -U postgres
 ```
 
-#### Using pgAdmin
+#### 2. Using pgAdmin
 
 Using Portainer, open port 80 of `pgadmin4_container`.  You will need to provide the login and password set in the `docker-compose.yml` file (`admin@admin.com` and `letmein`).  Then you will need to establish a server connection to the database.  This will be done with the IP address of `pg_container` and the login and password for the database set in the `docker-compose.yml` file (`postgres` and `letmein`).  
