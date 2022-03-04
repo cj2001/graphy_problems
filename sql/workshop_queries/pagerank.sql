@@ -78,4 +78,16 @@ BEGIN
 	END;
 END $$;
 
-SELECT * FROM pagerank ORDER BY id;
+SELECT
+	p.id, n.iata, p.rank, o.degree
+FROM
+	pagerank p
+INNER JOIN
+	airports n
+ON
+	p.id = n.id
+INNER JOIN
+	outdegree o
+ON
+	p.id = o.id
+ORDER BY p.rank DESC;
