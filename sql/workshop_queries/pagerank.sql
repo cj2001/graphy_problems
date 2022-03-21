@@ -2,9 +2,9 @@
 -- https://stackoverflow.com/questions/17787944/sql-pagerank-implementation
 -- It has been converted to PostgreSQL syntax.
 
-DROP TABLE outdegree;
-DROP TABLE pagerank;
-DROP TABLE tmprank;
+DROP TABLE IF EXISTS outdegree;
+DROP TABLE IF EXISTS pagerank;
+DROP TABLE IF EXISTS tmprank;
 CREATE TABLE outdegree(id int PRIMARY KEY, degree int);
 CREATE TABLE pagerank(id int PRIMARY KEY, rank float);
 CREATE TABLE tmprank(id int PRIMARY KEY, rank float);
