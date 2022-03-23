@@ -56,3 +56,15 @@ psql -h localhost -U postgres
 #### 2. Using pgAdmin
 
 Using Portainer, open port 80 of `pgadmin4_container`.  You will need to provide the login and password set in the `docker-compose.yml` file (`admin@admin.com` and `letmein`).  Then you will need to establish a server connection to the database.  This will be done with the IP address of `pg_container` and the login and password for the database set in the `docker-compose.yml` file (`postgres` and `letmein`).  
+
+## References
+
+- [Bite-Sized Neo4j for Data Scientists](https://neo4j.com/video/bite-sized-neo4j-for-data-scientists/): Weekly 5ish minute video series for data scientists on learning Neo4j and GDS
+- [Neo4j Discord Server](https://discord.com/invite/neo4j/)
+- [The Neo4j Cheat Sheet and Quick Reference](https://dev.neo4j.com/neo4j_cheatsheet)
+- [Neo4j Cypher Reference Card](https://neo4j.com/docs/cypher-refcard/current/)
+- [Advanced Cypher Query Tuning (video)](https://youtu.be/xPSKqm4hFRc)
+- [Awesome Procedures on Cypher (APOC) User Guide](https://neo4j.com/labs/apoc/4.1/)
+- [Graph Data Science Library API Docs](https://dev.neo4j.com/graph_data_science)
+- [Neosemantics Docs](https://neo4j.com/labs/neosemantics/)
+- [Bloom Docs](https://neo4j.com/docs/bloom-user-guide/current/)
