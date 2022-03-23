@@ -2,7 +2,7 @@
 ### Written by: Dr. Clair J. Sullivan, Data Science Advocate, Neo4j
 #### email: clair.sullivan@neo4j.com
 #### Twitter: @CJLovesData1
-#### Last updated: March 16, 2022
+#### Last updated: March 23, 2022
 
 ## Introduction
 
@@ -15,6 +15,7 @@ In this course we will be working with a data set of routes between airports.  I
 - Official `neo4j` Python driver (`pip install neo4j`)
 - Traditional Python data science packages (`numpy`, `pandas`)
 - A notebook environment (Jupyter, Google Colab, VS Code Notebooks, etc.)
+- A SQL environment (see comment on Docker below)
 - [Neo4j Sandbox](https://sandbox.neo4j.com/)
 
 ## Recommended tools
