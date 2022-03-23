@@ -60,6 +60,7 @@ Using Portainer, open port 80 of `pgadmin4_container`.  You will need to provide
 ## References
 
 - [Bite-Sized Neo4j for Data Scientists](https://neo4j.com/video/bite-sized-neo4j-for-data-scientists/): Weekly 5ish minute video series for data scientists on learning Neo4j and GDS
+- [Neo4j Discord Server](https://discord.com/invite/neo4j/)
 - [The Neo4j Cheat Sheet and Quick Reference](https://dev.neo4j.com/neo4j_cheatsheet)
 - [Neo4j Cypher Reference Card](https://neo4j.com/docs/cypher-refcard/current/)
 - [Advanced Cypher Query Tuning (video)](https://youtu.be/xPSKqm4hFRc)
